@@ -1,1 +1,0 @@
-# shofadzik.github.io
