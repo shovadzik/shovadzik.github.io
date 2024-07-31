@@ -3,66 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Maintenance</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-	    background-image: linear-gradient(37deg, rgb(32, 218, 233),rgb(40, 21, 236));
-            background-color: #f0f0f0; /* Warna latar belakang */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 40px;
-            color:#8ec5f5;
-            margin-bottom: 20px;
-        }
-        #countdown {
-            font-size: 24px;
-            margin-bottom: 30px;
-            color:#8ec5f5;
-        }
-        #maintenance-image {
-            max-width: 35%;
-            height: auto;
-            border-radius: 8px;
-        }
-    </style>
+    <title>Menampilkan Gambar</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Under Maintenance</h1>
-        <div id="countdown">Maintenance will end in <span id="time"></span></div>
-        <img id="maintenance-image" src="maintenance.png" alt="Under Maintenance Image">
-    </div>
-
-    <script>
-        // Set the date when maintenance ends (replace with your own date)
-        var maintenanceEnds = new Date('October 30, 2024 00:00:00').getTime();
-
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = maintenanceEnds - now;
-
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("time").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("time").innerHTML = "Maintenance is over";
-            }
-        }, 1000);
-    </script>
+    <h1>Menampilkan Gambar dengan HTML</h1>
+    <img src="maintenance.png" alt="Deskripsi Gambar" width="500" height="auto">
+    <p>Ini adalah gambar yang ditampilkan di website.</p>
 </body>
 </html>
