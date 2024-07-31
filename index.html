@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menampilkan Gambar</title>
+    <title>Under Maintenance</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+        }
+        .container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Menampilkan Gambar dengan HTML</h1>
-    <img src="maintenance.png" alt="Deskripsi Gambar" width="500" height="auto">
-    <p>Ini adalah gambar yang ditampilkan di website.</p>
+    <div class="container">
+        <div class="overlay">UNDER MAINTENANCE</div>
+        <img src="maintenance.png" alt="Maintenance Image">
+    </div>
 </body>
 </html>
+
